@@ -1,0 +1,31 @@
+{
+  "name": "example-fontawesome-npm",
+  "version": "1.0.0",
+  "description": "## 使ったコマンド ``` npm init",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --host localhost --config ./webpack.config.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fukugit/example-fontawesome-npm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fukugit/example-fontawesome-npm/issues"
+  },
+  "homepage": "https://github.com/fukugit/example-fontawesome-npm#readme",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
