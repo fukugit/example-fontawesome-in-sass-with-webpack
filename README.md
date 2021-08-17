@@ -1,15 +1,21 @@
 # example-fontawesome-npm
-このプロジェクトはnpm+webpack+SassでFont Awesomeを利用する方法を説明しています。  😀
-基本的にはFontawesomeの[公式ページのSassでFontawesomeを利用する方法](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)に従って作成しました。  
+🎉 🎉 🎉 このプロジェクトはSass+webpack+npmでFontAwesomeを利用する方法を説明しています。  🎉 🎉 🎉  
+このサンプルプロジェクトを作成した背景としては、webpack+SassでFontAwesomeを使用する方法の文献が少なかったことと、最初にプロジェクトを作成してもうまく動かなかったことから自分用のメモとしてこのサンプルプロジェクトを作成することとしました。  
+webpack+SassでFontAwesomeを使用する上での注意点にはついては[Important Point](#Important Point)を参考にして下さい。👀  
+設定方法については[Project Structure](#Project Structure)で各ファイルの設定方法を細かく記述しています。こちらも参照して下さい。👀  
 
+このプロジェクトは、基本的にはFontawesomeの[公式ページのSassでFontawesomeを利用する方法](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)に従って作成しました。  
 
-このサンプルプロジェクトを作成した背景としては、webpack+SassでFont Awesomeを使用しようとした時に文献が少なかったことと、最初にプロジェクトを作成してもうまく動かなかったことから自分用のメモとしてこのサンプルプロジェクトを作成することとしました。
-webpackでFontawesomeを利用するには少し工夫が必要なようでした。注意点については[Dependency](#Dependency)にまとめています。
+🎉 🎉 🎉 This project gives you the way of usage of FontAwesome in Sass with webpack. 🎉 🎉 🎉  
 
+At first time, I'd like to share the reason I created this project.  
+For first reason, Few sites of explanation the way of usage FontAwesome with webpack exist in the web sites as long as I checked. For second one, I faced some problem that I put together in the [section of Important Point](#Important Point) during coding with webpack.  
 
-One Paragraph of project description goes here
+I created this project following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)
+
 
 ### Prerequisites
+It is necessary to install '''npm''' before project up and running this project on your local machine.  
 npmはあらかじめインストールして下さい。
 
 What things you need to install the software and how to install them
@@ -23,19 +29,25 @@ Give examples
 npm insatall
 npm run build
 ```
+
+After executing the abvobe commands, open the '''./docs/index.html''' with Chrome or other browser.  
 上記のコマンドを実行後に、./docs/index.htmlをChromeで開いて下さい。
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 
 ### Demo
-[See demopage](http://www.dropwizard.io/1.0.2/docs/)
+[See demo](http://www.dropwizard.io/1.0.2/docs/)
 
-## Built With
+## Important Point
+|     |     |
+| --- | --- |
+|     |     |
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Project Structure
+|     |     |
+| --- | --- |
+|     |     |
 
 ## Dependency 
 Add library name.  

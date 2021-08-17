@@ -5,34 +5,89 @@
 @import 'variables.scss';
 @import 'for-normal-css.scss';
 
+
 body {
   .container {
     display: flex;
     width: 100%;
+    margin-top: 50px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     .itags{
-      margin-top: 100px;
-      margin-bottom: 100px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .red {
         font-size: 2em;
-        color: Tomato;
+        color: #d9534f;
+        margin-right: 10px;
       }
       .blue {
         font-size: 3em;
-        color: Dodgerblue;
+        color: #348498;
+        margin-right: 10px;
       }
       .green {
         font-size: 4em;
-        color: lawngreen;
+        color: #96ceb4;
+      }
+      .twitter {
+        @extend %fa-icon;
+        @extend .fab;
+        margin-right: 10px;
+        &:before {
+          content: fa-content($fa-var-twitter);
+          font-size: 2em;
+          color: #d9534f;
+          margin-right: 10px;
+        }
+      }
+      .cammera-blue {
+        @extend %fa-icon;
+        @extend .fas;
+        margin-right: 10px;
+        &:before {
+          content: fa-content($fa-var-camera);
+          font-size: 3em;
+          color: #348498;
+          margin-right: 10px;
+        }
+      }
+      .cammera-green {
+        @extend %fa-icon;
+        @extend .fas;
+        margin-right: 10px;
+        &:before {
+          content: fa-content($fa-var-camera);
+          font-size: 4em;
+          color: #96ceb4;
+          margin-right: 10px;
+        }
+      }
+      .twitter-all {
+        @extend %fa-icon;
+        @extend .fab;
+        margin-right: 10px;
+        &:before {
+          content: fa-content($fa-var-twitter);
+          font-size: 2em;
+          color: #d9534f;
+          margin-right: 10px;
+        }
+        &:after {
+          content: fa-content($fa-var-twitter);
+          font-size: 2em;
+          color: #d9534f;
+          margin-left: 10px;
+        }
       }
     }
 
   }
-  // 下記は共通でオーバーライドする必要があります。
-  .fas, .fab {
-    font-weight: normal;
-    display: block;
-  }
+
   .user2 {
     // font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
     @extend %fa-icon;
