@@ -16,7 +16,7 @@ body {
     align-items: center;
     .itags{
       margin-top: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,7 +42,6 @@ body {
           content: fa-content($fa-var-twitter);
           font-size: 2em;
           color: #d9534f;
-          margin-right: 10px;
         }
       }
       .cammera-blue {
@@ -53,7 +52,6 @@ body {
           content: fa-content($fa-var-camera);
           font-size: 3em;
           color: #348498;
-          margin-right: 10px;
         }
       }
       .cammera-green {
@@ -64,7 +62,6 @@ body {
           content: fa-content($fa-var-camera);
           font-size: 4em;
           color: #96ceb4;
-          margin-right: 10px;
         }
       }
       .twitter-all {
@@ -85,7 +82,16 @@ body {
         }
       }
     }
-
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 100px;
+    }
+    strong {
+      color: red;
+    }
   }
 
   .user2 {

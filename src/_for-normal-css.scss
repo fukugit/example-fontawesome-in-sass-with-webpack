@@ -12,7 +12,21 @@
 }
 
 body {
-  .camera::before {
+  .twitter-small::before {
+    font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
+    content: "\f099";
+    font-size: 2em;
+    color: #d9534f;
+    margin-right: 10px;
+  }
+  .camera-small::before {
+    font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
+    content: "\f030";
+    font-size: 3em;
+    color: #348498;
+    margin-right: 10px;
+  }
+  .camera-big::before {
     font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
     content: "\f030";
     font-size: 4em;
