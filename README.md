@@ -6,80 +6,68 @@ webpack+SassでFontAwesomeを使用する上での注意点にはついては[Im
 
 このプロジェクトは、基本的にはFontawesomeの[公式ページのSassでFontawesomeを利用する方法](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)に従って作成しました。  
 
-🎉 🎉 🎉 This project gives you the way of usage of FontAwesome in Sass with webpack. 🎉 🎉 🎉  
+🎉 🎉 🎉  This project gives you the way of usage of FontAwesome in Sass with webpack.  🎉 🎉 🎉  
 
-At first time, I'd like to share the reason I created this project.  
-For first reason, Few sites of explanation the way of usage FontAwesome with webpack exist in the web sites as long as I checked. For second one, I faced some problem that I put together in the [section of Important Point](#Important Point) during coding with webpack.  
-
-I created this project following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)
+First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the [section of Important Point](#Important Point) during coding with Webpack.  
+So, I created this project as it explain resolving them, following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)
 
 
 ### Prerequisites
-It is necessary to install '''npm''' before project up and running this project on your local machine.  
-npmはあらかじめインストールして下さい。
+It is necessary to install '''npm''' before project up and running it on your local machine.  
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ## Getting Started
+After checking out this project, you should execute these commands.  
 ```
 npm insatall
 npm run build
 ```
 
-After executing the abvobe commands, open the '''./docs/index.html''' with Chrome or other browser.  
-上記のコマンドを実行後に、./docs/index.htmlをChromeで開いて下さい。
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Then, open the '''./docs/index.html''' with Chrome or other browser.  
 
 
 ### Demo
 [See demo](http://www.dropwizard.io/1.0.2/docs/)
 
 ## Important Point
-|     |     |
-| --- | --- |
-|     |     |
-
-## Project Structure
-|     |     |
-| --- | --- |
-|     |     |
-
-## Dependency 
-Add library name.  
-* [Mocha](https://www.npmjs.com/package/mocha) - The testing library in npm.  
-
-```
-npm init
-npm install webpack webpack-cli
-npm install html-webpack-plugin --dev
-npm install sass-loader resolve-url-loader css-loader file-loader -dev
-npm install sass
-npm install --save-dev style-loader
-npm install @fortawesome/fontawesome-free
-```
-
-重要！！！
-https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist
-下記のエラーを回避するために上記のライブラリが必要
+### Problem 1 (Build error)
+webpackでビルドした時に下記のエラーが発生します。
 ```
 ERROR in ./src/style.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss) 4:36-93
-Module not found: Error: Can't resolve '../webfonts/fa-brands-400.eot' in '/Users/fukuma/git/example-fontawesome-npm/src'
- @ ./src/style.scss 8:6-140 22:17-24 26:0-110 26:0-110 27:22-29 27:33-47 27:50-64
- @ ./src/index.js 1:0-22
- ```
+Module not found: Error: Can't resolve '../webfonts/fa-brands-400.eot' in ...
+```
 
-## Contributing
+#### Solution
+[resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist)を利用する必要があります。
+こちらのプラグインはSass内で```url()```を利用することができるプラグインです。  
+おそらくFontAwesome内で```url()```を利用しているためwebpackでFontAwesomeを利用する場合には必須のプラグインなのだと思います。
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+### Problem 2 (Not found font file)
+```@fortawesome/fontawesome-free```をインストールしただけではSass内からfontファイルを参照することができません。
 
-## License
+#### Solution
+fontファイルは明示的にoutputフォルダに出力するために ```index.js```で以下のように定義する必要があります。
+```
+import '@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf';
+import '@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf';
+import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
+```
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## Project Structure
+| File                                    | Explanation                                               |
+| --------------------------------------- | --------------------------------------------------------- |
+| [webpack.config.js](/webpack.config.js) | webpackの設定ファイル                                            |
+| [index.js](/src/index.js)               | エントリーポイントJS. ここでFontAwesomeのフォントファイルを```/docs```に出力しています。 |
+| [_variables.scss](/src/_variables.scss) | ```$fa-font-path``` を定義しています。                             |
+| [_for-normal-css.scss](/src/_for-normal-css.scss) | SASS形式ではなく通常のCSSでFontAwesomeのフォントを設定する方法です。                             |
+
+
+## Dependency 
+
+```
+npm install --save-dev css-loader file-loader html-webpack-plugin resolve-url-loader sass sass-loader webpack webpack-cli style-loader
+npm install @fortawesome/fontawesome-free
+```
 
 ## Acknowledgments
 

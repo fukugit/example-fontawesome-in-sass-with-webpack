@@ -1,8 +1,13 @@
+// It is necessary for these files are to use FontAwesome in SASS.
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
-@import '~@fortawesome/fontawesome-free/scss/solid.scss'; //Solid (塗り)
-@import '~@fortawesome/fontawesome-free/scss/regular.scss'; //ロゴ等
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+
+// This file is for $fa-font-path.
 @import 'variables.scss';
+
+// This file is for FontAwesome using in normal css
 @import 'for-normal-css.scss';
 
 
@@ -92,24 +97,8 @@ body {
     strong {
       color: red;
     }
-  }
-
-  .user2 {
-    // font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
-    @extend %fa-icon;
-    @extend .fas;
-    &:before {
-      content: fa-content($fa-var-user);
-      margin-right: .5rem;
-    }
-  }
-  .user3 {
-    // font-family: "Font Awesome 5 Free Regular 400", "Font Awesome 5 Free Brands 400", "Font Awesome 5 Free Solid 900";
-    @extend %fa-icon;
-    @extend .fab;
-    &:before {
-      content: fa-content($fa-var-twitter);
-      margin-right: .5rem;
+    footer {
+      height: 200px;
     }
   }
 }
