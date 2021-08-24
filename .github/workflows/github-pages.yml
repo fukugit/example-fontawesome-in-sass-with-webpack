@@ -25,6 +25,9 @@ jobs:
           node-version: '14'
           check-latest: tru
 
+      - name: ci
+        run: npm ci
+
       - name: build
         run: npm run build
 
