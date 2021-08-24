@@ -1,12 +1,12 @@
 # example-fontawesome-npm
 This project gives you the way of usage of FontAwesome in Sass with webpack.  
 
-First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the - [section of Important Point](#Important Point) during coding with Webpack.  
+First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the section of 'Important Point' during coding with Webpack.  
 So, I created this project as it explain resolving them, following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)
 
 
 ### Prerequisites
-It is necessary to install '''npm''' before project up and running it on your local machine.  
+It is necessary to install ```npm``` before project up and running it on your local machine.  
 
 
 ## Getting Started
@@ -16,7 +16,7 @@ npm insatall
 npm run build
 ```
 
-Then, open the '''./docs/index.html''' with Chrome or other browser.  
+Then, open the ```./docs/index.html``` with Chrome or other browser.  
 
 
 ### Demo
@@ -59,6 +59,7 @@ import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
 
 ```
 npm install --save-dev css-loader file-loader html-webpack-plugin resolve-url-loader sass sass-loader webpack webpack-cli style-loader
+npm install --save-dev mini-css-extract-plugin
 npm install @fortawesome/fontawesome-free
 ```
 
