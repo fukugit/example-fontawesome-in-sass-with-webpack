@@ -1,11 +1,4 @@
 # example-fontawesome-npm
-🎉 🎉 🎉 このプロジェクトはSass+webpack+npmでFontAwesomeを利用する方法を説明しています。  🎉 🎉 🎉  
-このサンプルプロジェクトを作成した背景としては、webpack+SassでFontAwesomeを使用する方法の文献が少なかったことと、最初にプロジェクトを作成してもうまく動かなかったことから自分用のメモとしてこのサンプルプロジェクトを作成することとしました。  
-webpack+SassでFontAwesomeを使用する上での注意点にはついては[Important Point](#Important Point)を参考にして下さい。👀  
-設定方法については[Project Structure](#Project Structure)で各ファイルの設定方法を細かく記述しています。こちらも参照して下さい。👀  
-
-このプロジェクトは、基本的にはFontawesomeの[公式ページのSassでFontawesomeを利用する方法](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)に従って作成しました。  
-
 🎉 🎉 🎉  This project gives you the way of usage of FontAwesome in Sass with webpack.  🎉 🎉 🎉  
 
 First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the [section of Important Point](#Important Point) during coding with Webpack.  
