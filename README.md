@@ -1,7 +1,7 @@
 # example-fontawesome-npm
-🎉 🎉 🎉  This project gives you the way of usage of FontAwesome in Sass with webpack.  🎉 🎉 🎉  
+This project gives you the way of usage of FontAwesome in Sass with webpack.  
 
-First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the [section of Important Point](#Important Point) during coding with Webpack.  
+First of all, I'd like to share some reasones I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked; I faced some problem that I put together in the - [section of Important Point](#Important Point) during coding with Webpack.  
 So, I created this project as it explain resolving them, following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass)
 
 
@@ -20,7 +20,7 @@ Then, open the '''./docs/index.html''' with Chrome or other browser.
 
 
 ### Demo
-[See demo](http://www.dropwizard.io/1.0.2/docs/)
+[See demo](https://fukugit.github.io/example-fontawesome-npm/index.html)
 
 ## Important Point
 ### Problem 1 (Build error)
