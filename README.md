@@ -12,23 +12,20 @@ So, please tell me a good webpage to explain usage of it if you know.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-Table of contents
+## Table of contents
 
-  - [Prerequisites](#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-  - [Demo](#demo)
+- [Demo](#demo)
 - [Problem](#problem)
   - [Fixed](#fixed)
-  - [Unfixed](#unfixed)
-- [Important](#important)
   - [Problem 1 (Build error)](#problem-1-build-error)
     - [Solution](#solution)
   - [Problem 2 (Not found font file)](#problem-2-not-found-font-file)
     - [Solution](#solution-1)
+  - [Unfixed](#unfixed)
 - [Project Structure](#project-structure)
 - [Dependency](#dependency)
-- [Acknowledgments](#acknowledgments)
-- [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
