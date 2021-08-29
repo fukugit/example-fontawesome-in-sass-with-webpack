@@ -1,4 +1,4 @@
-# example-fontawesome-npm
+# example-fontawesome-in-sass-with-webpack
 This project gives you the way of usage of FontAwesome in Sass with webpack.  
 
 I've faced some problems when using FontAwesome in Sass with webpack, so that I put together it in [problem](#problem).  
@@ -34,7 +34,7 @@ Table of contents
 
 
 
-### Prerequisites
+## Prerequisites
 It is necessary to install ```npm``` before project up and running it on your local machine.  
 
 
@@ -45,21 +45,16 @@ npm insatall
 npm run build
 ```
 
-Then, open the ```./docs/index.html``` with Chrome or other browser.  
+Then, open the ```./docs/index.html``` with Chrome or other browser. Then you can see like [this](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html).  
 
 
-### Demo
-[See demo](https://fukugit.github.io/example-fontawesome-npm/index.html)
+## Demo
+[See demo](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html)
 
 
 ## Problem
 ### Fixed
-testaaaa
 
-### Unfixed
-tewtssss
-
-## Important
 ### Problem 1 (Build error)
 webpackでビルドした時に下記のエラーが発生します。
 ```
@@ -83,6 +78,9 @@ import '@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf';
 import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
 ```
 
+### Unfixed
+tewtssss
+
 ## Project Structure
 | File                                    | Explanation                                               |
 | --------------------------------------- | --------------------------------------------------------- |
@@ -99,32 +97,3 @@ npm install --save-dev css-loader file-loader html-webpack-plugin resolve-url-lo
 npm install --save-dev mini-css-extract-plugin
 npm install @fortawesome/fontawesome-free
 ```
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-## Usage 
-Consectetur Commodo Cursus Sollicitudin Vehicula
-
-
-
-
-
-
-
-/*!
- * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot");
-  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-regular-400.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
