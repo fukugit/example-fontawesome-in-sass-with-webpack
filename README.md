@@ -1,10 +1,8 @@
 # example-fontawesome-in-sass-with-webpack
-This project gives you the way of usage of FontAwesome in Sass with webpack.  
+This project explains that the way of usage of FontAwesome in Sass with webpack.  
 
-I've faced some problems when using FontAwesome in Sass with webpack, so that I put together it in [problem](#problem).  
-Some problems was fixed, unfortunately, some still wasn't. You can see both [Fixed](#fixed) and [Unfixed](#unfixed).  
-
-Basically, I created this probject following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
+I've faced some problems when using it, so that I put together it in [problem](#problem).  
+Some problems was [fixed](#fixed) by myself, unfortunately, some still wasn't. You can see the reamin problem at [Unfixed](#unfixed).  
 
 In the end, I'd like to share you why I created this project; Few web sites of explanation a way of usage FontAwesome with webpack exist in the Internet as long as I checked.  
 So, please tell me a good webpage to explain usage of it if you know.  
@@ -12,20 +10,23 @@ So, please tell me a good webpage to explain usage of it if you know.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of contents
+Table of contents
 
-- [Prerequisites](#prerequisites)
+  - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Demo](#demo)
+  - [Demo](#demo)
 - [Problem](#problem)
   - [Fixed](#fixed)
+  - [Unfixed](#unfixed)
+- [Important](#important)
   - [Problem 1 (Build error)](#problem-1-build-error)
     - [Solution](#solution)
   - [Problem 2 (Not found font file)](#problem-2-not-found-font-file)
     - [Solution](#solution-1)
-  - [Unfixed](#unfixed)
 - [Project Structure](#project-structure)
 - [Dependency](#dependency)
+- [Acknowledgments](#acknowledgments)
+- [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -53,22 +54,23 @@ Then, open the ```./docs/index.html``` with Chrome or other browser. Then you ca
 ### Fixed
 
 ### Problem 1 (Build error)
-webpackでビルドした時に下記のエラーが発生します。
+I faced the below error message after building.  
 ```
 ERROR in ./src/style.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss) 4:36-93
 Module not found: Error: Can't resolve '../webfonts/fa-brands-400.eot' in ...
 ```
 
 #### Solution
-[resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist)を利用する必要があります。
-こちらのプラグインはSass内で```url()```を利用することができるプラグインです。  
-おそらくFontAwesome内で```url()```を利用しているためwebpackでFontAwesomeを利用する場合には必須のプラグインなのだと思います。
+To resolve the problem, the [resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist) should be used.  
+It has a function of available to use the property of ```url()``` in Sass. 
+I guess the FontAwesome uses it itself, so it is necessary to install the plugin.  
 
 ### Problem 2 (Not found font file)
-```@fortawesome/fontawesome-free```をインストールしただけではSass内からfontファイルを参照することができません。
+Only installing the ```@fortawesome/fontawesome-free```, doesn't Sass file refer the font file.  
 
 #### Solution
-fontファイルは明示的にoutputフォルダに出力するために ```index.js```で以下のように定義する必要があります。
+To refer the font file from Sass, the entry point js file like ```index.js``` defines something like the below.  
+The settings put it into the output folder for CSS built Sass.  
 ```
 import '@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf';
 import '@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf';
@@ -76,7 +78,9 @@ import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
 ```
 
 ### Unfixed
-tewtssss
+### Problem 1 (Not appear FontAesome icon in Sass)
+I tried to use ```$fa-var-twitter``` provided by FontAwesome but it does not appear at Webpage. It was displayed the shape of an empty square instead.  
+I ask someone this issue in [stackoverflow](https://stackoverflow.com/questions/69013214/fontawesome-icon-in-sass-with-webpack-is-not-displayed).  
 
 ## Project Structure
 | File                                    | Explanation                                               |
@@ -94,3 +98,8 @@ npm install --save-dev css-loader file-loader html-webpack-plugin resolve-url-lo
 npm install --save-dev mini-css-extract-plugin
 npm install @fortawesome/fontawesome-free
 ```
+
+## Acknowledgement
+
+Basically, I created this probject following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
+
