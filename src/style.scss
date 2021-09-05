@@ -1,3 +1,4 @@
+// Font file path
 $fa-font-path: "./webfonts";
 
 // It is necessary for these files are to use FontAwesome in SASS.
@@ -6,35 +7,8 @@ $fa-font-path: "./webfonts";
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 
-// This file is for $fa-font-path.
-// @import 'variables.scss';
-// $fa-font-path: "./webfonts";
-
 // This file is for FontAwesome using in normal css
 @import 'for-normal-css.scss';
-
-
-// @font-face {
-//   font-family: "Font Awesome 5 Free";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: block;
-//   src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("./webfonts/fa-regular-400.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
-// }
-// @font-face {
-//   font-family: "Font Awesome 5 Free";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: block;
-//   src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-regular-400.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("./webfonts/fa-regular-400.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
-// }
-// @font-face {
-//   font-family: "Font Awesome 5 Free";
-//   font-style: normal;
-//   font-weight: 900;
-//   font-display: block;
-//   src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("./fa-solid-900.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
-// }
 
 body {
   .container {
