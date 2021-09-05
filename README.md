@@ -1,8 +1,10 @@
 # example-fontawesome-in-sass-with-webpack
-This project explains that the way of usage of FontAwesome in Sass with webpack.  
+This project explains that the way of usage of FontAwesome in Sass with Webpack.  
 
-I've faced some problems when using it, so that I put together it in [problem](#problem).  
-Some problems was [fixed](#fixed) by myself, unfortunately, some still wasn't. You can see the reamin problem at [Unfixed](#unfixed).  
+I've faced some problems when trying it, so that I put together it in the [problem](#problem).  
+Some problems were [fixed](#fixed) by myself, unfortunately, one problem was't. You can see the reamin problem at the [Unfixed](#unfixed).  
+
+<br/>
 
 The followoing is that it available and unavailable for this project to do.  
 
@@ -12,8 +14,9 @@ The followoing is that it available and unavailable for this project to do.
 | Defination of FontAwesome font file in CSS. | Available        |
 | Defination of FontAwesome class in Sass.    | Unavailable      |
 
+<br/>
 
-In the end, I've tried to find a web sites of explanation a way of usage FontAwesome with webpack, but it wasn't.  
+In the end, I've tried to find a web sites of explanation a way of usage FontAwesome with Webpack, but it wasn't.  
 So, please tell me a good webpage to explain usage of it if you know.  
 <br/>
 
