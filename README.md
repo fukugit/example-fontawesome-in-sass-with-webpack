@@ -24,7 +24,6 @@ So, please tell me a good webpage to explain usage of it if you know.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of contents
 
-- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Demo](#demo)
 - [Problem](#problem)
