@@ -43,18 +43,18 @@ So, please tell me a good webpage to explain usage of it if you know.
 <br/>
 
 
-## Prerequisites
-It is necessary to install ```npm``` before project up and running it on your local machine.  
+## Getting Started
+It is necessary to install ```npm``` before executing the below commands.  
 <br/>
 
-## Getting Started
-After checking out this project, you should execute these commands.  
 ```
 npm insatall
 npm run build
 ```
 
-Then, open the ```./docs/index.html``` with Browser. Then you can see a webpage like [this](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html).  
+<br/>
+
+Then, open the ```./docs/index.html``` with Browser.  
 <br/>
 
 ## Demo
@@ -75,7 +75,7 @@ Module not found: Error: Can't resolve '../webfonts/fa-brands-400.eot' in ...
 #### Solution
 To resolve the problem, the [resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist) should be used.  
 It has a function of available to use the property of ```url()``` in Sass. 
-I guess the FontAwesome uses it itself, so it is necessary to install the plugin.  
+The probabillity that the FontAwesome uses it itself, so it is necessary to install the plugin.  
 <br/>
 
 ### Problem 2 (Not found font file)
@@ -110,13 +110,13 @@ I ask someone this issue in [stackoverflow](https://stackoverflow.com/questions/
 ## Dependency 
 
 ```
-npm install --save-dev css-loader file-loader html-webpack-plugin resolve-url-loader sass sass-loader webpack webpack-cli style-loader
-npm install --save-dev mini-css-extract-plugin
+npm install --save-dev css-loader file-loader html-webpack-plugin webpack webpack-cli
+npm install --save-dev resolve-url-loader sass sass-loader style-loader mini-css-extract-plugin
 npm install @fortawesome/fontawesome-free
 ```
 <br/>
 
 ## Acknowledgement
-Basically, I created this probject following [the how to set up FontAwesome in Sass in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
+Basically, Creating this project ,I was following [the document in the official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
 
 <br/>
