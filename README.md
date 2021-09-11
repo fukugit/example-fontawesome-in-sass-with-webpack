@@ -6,7 +6,7 @@ Some problems were [fixed](#fixed) by myself, unfortunately, one problem was't. 
 
 <br/>
 
-The followoing is that it available and unavailable for this project to do.  
+The followoing is that it is available and unavailable for this project to do.  
 
 | Things to do                                | Available or not |
 | ------------------------------------------- | ---------------- |
@@ -17,7 +17,7 @@ The followoing is that it available and unavailable for this project to do.
 <br/>
 
 In the end, I've tried to find a web sites of explanation a way of usage FontAwesome with Webpack, but it wasn't.  
-So, please tell me a good webpage to explain usage of it if you know.  
+So, please tell me a good webpage to fix the above issue it if you know.  
 <br/>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -57,7 +57,7 @@ Then, open the ```./docs/index.html``` with Browser.
 <br/>
 
 ## Demo
-[See demo](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html)
+You can see the webpage in [here](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html) that uses FontAwesome, which is made by sass with webpack.  
 <br/>
 
 
