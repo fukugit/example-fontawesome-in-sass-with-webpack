@@ -2,7 +2,7 @@
 This project explains that the way of usage of FontAwesome in Sass with Webpack.  
 
 I've faced some problems when trying it, so that I put together it in the [problem](#problem).  
-Some problems were [fixed](#fixed) by myself, unfortunately, one problem was't. You can see the reamin problem at the [Unfixed](#unfixed).  
+Some problems were [fixed](#there-are-fixed-problem) by myself, unfortunately, one [problem](#there-is-not-fixed-problem) was't.  
 
 <br/>
 
@@ -64,23 +64,23 @@ You can see the webpage in [here](https://fukugit.github.io/example-fontawesome-
 ## Problem
 ### There are fixed problem
 
-### Problem 1 (Build error)
+#### Problem 1 (Build error)
 I faced the below error message after building.  
 ```
 ERROR in ./src/style.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss) 4:36-93
 Module not found: Error: Can't resolve '../webfonts/fa-brands-400.eot' in ...
 ```
 
-#### Solution
+##### Solution
 To resolve the problem, the [resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader?utm_source=pocket_mylist) should be used.  
 It has a function of available to use the property of ```url()``` in Sass. 
 The probabillity that the FontAwesome uses it itself, so it is necessary to install the plugin.  
 <br/>
 
-### Problem 2 (Not found font file)
+#### Problem 2 (Not found font file)
 Only installing the ```@fortawesome/fontawesome-free```, doesn't Sass file refer the font file.  
 
-#### Solution
+##### Solution
 To refer the font file from Sass, the entry point js file like ```index.js``` defines something like the below.  
 The settings put it into the output folder for CSS built Sass.  
 ```
@@ -91,7 +91,7 @@ import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
 <br/>
 
 ### There is NOT fixed problem
-### Problem 1 (Not appear FontAesome icon in Sass)
+#### Problem 1 (Not appear FontAesome icon in Sass)
 I tried to use ```$fa-var-twitter``` provided by FontAwesome but it does not appear at Webpage. It was displayed a shape of an empty square instead.  
 I raised that in [stackoverflow](https://stackoverflow.com/questions/69013214/fontawesome-icon-in-sass-with-webpack-is-not-displayed).  
 <br/>
