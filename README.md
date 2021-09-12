@@ -62,7 +62,7 @@ You can see the webpage in [here](https://fukugit.github.io/example-fontawesome-
 
 
 ## Problem
-### Fixed
+### There are fixed problem
 
 ### Problem 1 (Build error)
 I faced the below error message after building.  
@@ -90,10 +90,10 @@ import '@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf';
 ```
 <br/>
 
-### Unfixed
+### There is NOT fixed problem
 ### Problem 1 (Not appear FontAesome icon in Sass)
-I tried to use ```$fa-var-twitter``` provided by FontAwesome but it does not appear at Webpage. It was displayed the shape of an empty square instead.  
-I ask someone this issue in [stackoverflow](https://stackoverflow.com/questions/69013214/fontawesome-icon-in-sass-with-webpack-is-not-displayed).  
+I tried to use ```$fa-var-twitter``` provided by FontAwesome but it does not appear at Webpage. It was displayed a shape of an empty square instead.  
+I raised that in [stackoverflow](https://stackoverflow.com/questions/69013214/fontawesome-icon-in-sass-with-webpack-is-not-displayed).  
 <br/>
 
 ## Project Structure
@@ -116,6 +116,6 @@ npm install @fortawesome/fontawesome-free
 <br/>
 
 ## Acknowledgement
-Basically, Creating this project ,I was following [the document in the official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
+Creating this project ,I was basically following [this document in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
 
 <br/>
