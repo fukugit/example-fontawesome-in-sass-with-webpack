@@ -24,31 +24,28 @@ module.exports = {
             }
         }]
       },
-      // sass ローダー
+      // sass
       {
         test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          // {
-          //   loader: 'style-loader'
-          // },
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              url: false // resolve-url-loader を利用するために必要です。
+              url: false // In order to use 'resolve-url-loader', the url should be false.
             }
           },
           {
-            // SASS内で url()を利用するために必要なローダーです。
+            // In order to use 'url()' in sass, the loader should be installed.
             loader: 'resolve-url-loader'
           },
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true, // resolve-url-loader を利用するために必要です。
+              sourceMap: true, // In order to use 'resolve-url-loader', the url should be true.
             }
           }
         ],
@@ -57,8 +54,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // 元HTML
-      filename: "index.html",  // 出力先HTML
+      template: "./src/index.html", // from
+      filename: "index.html",  // to
       chunks: ['index']
     }),
     new MiniCssExtractPlugin({
