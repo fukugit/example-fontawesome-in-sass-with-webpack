@@ -1,12 +1,11 @@
 # example-fontawesome-in-sass-with-webpack
-This project explains that the way of usage of FontAwesome in Sass with Webpack.  
-
+This project explains that the way of the usage of FontAwesome in Sass with Webpack.  
 I've faced some problems when trying it, so that I put together it in the [problem](#problem).  
-Some problems were [fixed](#there-are-fixed-problem) by myself, unfortunately, one [problem](#there-is-not-fixed-problem) was't.  
+Some problems got [fixed](#there-are-fixed-problem) by myself, unfortunately, one [problem](#there-is-not-fixed-problem) didn't.  
 
 <br/>
 
-The followoing is that it is available and unavailable for this project to do.  
+The followoing is that all of the things available/unavailable in this project.  
 
 | Things to do                                | Available or not |
 | ------------------------------------------- | ---------------- |
@@ -43,21 +42,18 @@ So, please tell me a good webpage to fix the above issue it if you know.
 
 
 ## Getting Started
-It is necessary to install ```npm``` before executing the below commands.  
-<br/>
 
 ```
 npm insatall
 npm run build
+
+## Then, open the ```./docs/index.html``` with Browser.  
 ```
 
 <br/>
 
-Then, open the ```./docs/index.html``` with Browser.  
-<br/>
-
 ## Demo
-You can see the webpage in [here](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html) that uses FontAwesome, which is made by sass with webpack.  
+You can see the webpage in [here](https://fukugit.github.io/example-fontawesome-in-sass-with-webpack/index.html) that uses FontAwesome, which consists of sass and webpack.  
 <br/>
 
 
@@ -116,6 +112,6 @@ npm install @fortawesome/fontawesome-free
 <br/>
 
 ## Acknowledgement
-Creating this project ,I was basically following [this document in official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass).  
+To create this project, I read through [the document on the official site.](https://fontawesome.com/v5.0/how-to-use/on-the-web/using-with/sass). 
 
 <br/>
