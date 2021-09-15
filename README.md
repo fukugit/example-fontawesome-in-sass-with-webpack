@@ -3,6 +3,9 @@ This project explains that the way of the usage of FontAwesome in Sass with Webp
 I've faced some problems when trying it, so that I put together it in the [problem](#problem).  
 Some problems got [fixed](#there-are-fixed-problem) by myself, unfortunately, one [problem](#there-is-not-fixed-problem) didn't.  
 
+This project explains that the way of the usage of FontAwesome in Sass with Webpack.
+I've faced some problems when trying it. Hence, I put together it in this [problem](#problem). Some of those got [fixed](#there-are-fixed-problem) by myself. Unfortunately, another [problem](#there-is-not-fixed-problem) didn't.
+
 <br/>
 
 The followoing is that all of the things available/unavailable in this project.  
