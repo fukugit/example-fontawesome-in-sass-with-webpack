@@ -1,6 +1,7 @@
 # example-fontawesome-in-sass-with-webpack
 This project explains that the way of the usage of FontAwesome in Sass with Webpack.  
-I've faced some problems when trying it. Hence, I put together it in this [problem](#problem). Some of those got [fixed](#there-are-fixed-problem) by myself. Unfortunately, another [problem](#there-is-not-fixed-problem) didn't.
+I've faced some problems when trying it. Icons didn't correctly appear on a webpage. Instead, an empty shape appeared.  
+Hence, I put together it in this [problem](#problem). Some of those got [fixed](#there-are-fixed-problem) by myself. Unfortunately, another [problem](#there-is-not-fixed-problem) didn't.
 
 <br/>
 
