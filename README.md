@@ -1,5 +1,5 @@
 # example-fontawesome-in-sass-with-webpack
-This project explains that the way of the usage of FontAwesome in Sass with Webpack.
+This project explains that the way of the usage of FontAwesome in Sass with Webpack.  
 I've faced some problems when trying it. Hence, I put together it in this [problem](#problem). Some of those got [fixed](#there-are-fixed-problem) by myself. Unfortunately, another [problem](#there-is-not-fixed-problem) didn't.
 
 <br/>
@@ -46,7 +46,7 @@ So, please tell me a better webpage to fix the above issue if you know.
 npm insatall
 npm run build
 
-## Then, open the ```./docs/index.html``` with Browser.  
+## Then, open the ./docs/index.html with Browser.  
 ```
 
 <br/>
