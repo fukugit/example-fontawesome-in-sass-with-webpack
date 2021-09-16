@@ -8,7 +8,7 @@ I've faced some problems when trying it. Hence, I put together it in this [probl
 
 <br/>
 
-The followoing is that all of the things available/unavailable in this project.  
+The following is that all of the things are available/unavailable in this project.  
 
 | Things to do                                | Available or not |
 | ------------------------------------------- | ---------------- |
